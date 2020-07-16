@@ -51,18 +51,30 @@ function createBoard() {
     }
 }
 
-createBoard();
+//check matches
+function checkForMatch() {
+    var cards = document.querySelectorAll('img');
+    const optionOneID = cardsChosenID[0];
+    const optionTwoID = cardsChosenID[1];
 
+    if (optionOneID === optionTwoID) {
+        alert("It's a match");
+    };
+};
 
+//card flip
 function flipcard() {
     var cardID = this.getAttribute('data-id');
     cardsChosen.push(cardArray[cardID].name);
     cardsChosenID.push(cardID);
     this.setAttribute('src', cardArray[cardID].img);
 
+    if(cardsChosenID.length === 2) {
+        setTimeout(checkForMatch, 500);
+    }
 }
 
 
-
+createBoard();
 });
 
