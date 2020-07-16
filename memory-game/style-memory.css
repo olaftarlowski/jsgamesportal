@@ -1,0 +1,21 @@
+body {
+    background-color: aquamarine;
+}
+
+.main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-intro__headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
