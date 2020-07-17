@@ -13,6 +13,22 @@ function randomSquare() {
     randomPosition.classList.add("mole");
 
     // assign the id of the randomPosition to hitPosition
+
+    hitPosition = randomPosition.id;
 };
 
-randomSquare()
+square.forEach(id => {
+    id.addEventListener('mouseup', ()=> {
+        if(id.id === hitPosition) {
+            result = result +1;
+            score.textContent= result;
+        }
+    });
+});
+
+function moveMole() {
+    let timerId = null;
+    timerId = setInterval(randomSquare, 1000);
+};
+
+moveMole();
