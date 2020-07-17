@@ -23,8 +23,8 @@ body {
 .section-gameUI__grid {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
-    width: 400px;
+    width: 408px;
+    border: 2px solid black;
 }
 
 .section-gameUI__content {
