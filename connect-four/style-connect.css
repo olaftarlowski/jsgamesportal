@@ -19,3 +19,36 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+/* ////////////// */
+
+.section-gameUI__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-gameUI__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 408px;
+    border: 1px solid black;
+    height: 240px;
+    width: 280px;
+}
+
+.section-gameUI__content div {
+    height: 40px;
+    width: 40px;
+}
+
+.player-one {
+    background-color: red;
+    border-radius: 20px;
+}
+
+.player-two {
+    background-color: blue;
+    border-radius: 20px;
+}
