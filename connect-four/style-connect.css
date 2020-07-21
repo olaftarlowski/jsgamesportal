@@ -52,3 +52,7 @@ body {
     background-color: blue;
     border-radius: 20px;
 }
+
+.para-hint {
+    font-style: italic;
+}
